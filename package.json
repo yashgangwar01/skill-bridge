@@ -1,0 +1,13 @@
+{
+    "name": "skillbridge-root",
+    "version": "1.0.0",
+    "description": "Root project runner",
+    "scripts": {
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+        "start:frontend": "cd frontend && npm run dev",
+        "start:backend": "cd backend && ..\\venv\\Scripts\\python.exe manage.py runserver"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
